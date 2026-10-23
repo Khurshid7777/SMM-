@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "silicare",
+  "owner": { "name": "Silicare SMM" },
+  "description": "Плагины Silicare (sil·icare by Yafho) для SMM: Reels, посты, автопроверка",
+  "plugins": [
+    {
+      "name": "silicare-reels",
+      "displayName": "Silicare Reels",
+      "source": "./plugins/silicare-reels",
+      "description": "Remotion, настроенный под Silicare: бренд, автопроверка медицинской рекламы, сценарии Reels RU/UZ и сборка роликов 1080×1920",
+      "category": "Design",
+      "tags": ["video", "smm", "reels", "remotion", "silicare"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Silicare Reel",
+  "type": "object",
+  "required": ["id", "title", "status", "format", "kind", "length_sec", "fps", "goal", "palette", "hook", "shots", "caption_ru", "caption_uz", "hashtags", "disclaimer", "shows_product", "claims", "reviewed_by_native_uz", "approved_by_owner"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^reel-[0-9]{2}-[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "status": { "enum": ["draft", "review", "approved", "published"] },
+    "format": { "const": "reels" },
+    "kind": { "enum": ["footage", "animation"] },
+    "length_sec": { "type": "number", "minimum": 15, "maximum": 25 },
+    "fps": { "const": 24 },
+    "goal": { "type": "string" },
+    "palette": { "type": "array", "items": { "enum": ["linen", "white", "graphite", "teal", "powder"] } },
+    "hook": { "type": "object", "required": ["ru", "uz"], "properties": { "ru": { "type": "string" }, "uz": { "type": "string" } } },
+    "shots": {
+      "type": "array", "minItems": 5, "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["n", "start", "end", "visual", "text_ru", "text_uz", "sound"],
+        "properties": {
+          "n": { "type": "integer" }, "start": { "type": "number" }, "end": { "type": "number" },
+          "visual": { "type": "string" }, "text_ru": { "type": "string" }, "text_uz": { "type": "string" },
+          "sound": { "type": "string" },
+          "clip": { "type": "string", "description": "Путь к отснятому клипу внутри video/public, например footage/reel-01/shot-1.mp4" }
+        }
+      }
+    },
+    "caption_ru": { "type": "string" },
+    "caption_uz": { "type": "string" },
+    "hashtags": { "type": "array", "minItems": 3, "maxItems": 5, "items": { "type": "string", "pattern": "^#" } },
+    "disclaimer": { "type": "boolean" },
+    "shows_product": { "type": "boolean" },
+    "claims": { "type": "array", "items": { "type": "object", "required": ["text", "source"], "properties": { "text": { "type": "string" }, "source": { "type": "string", "minLength": 3 } } } },
+    "reviewed_by_native_uz": { "type": "boolean" },
+    "approved_by_owner": { "type": "boolean" },
+    "music": { "type": "string", "description": "Путь к лицензированному треку внутри video/public" }
+  }
+}

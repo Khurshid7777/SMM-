@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "silicare-reels",
+  "displayName": "Silicare Reels",
+  "version": "0.1.0",
+  "description": "Кастомизация плагина Remotion под Silicare — силиконовые пластыри для ухода за рубцом (Узбекистан, RU/UZ). Бренд-стиль, автопроверка текстов, сценарии и сборка Reels.",
+  "author": { "name": "Silicare SMM" },
+  "keywords": ["silicare", "remotion", "reels", "smm", "uzbekistan", "medical-device"],
+  "license": "UNLICENSED"
+}
