@@ -14,6 +14,7 @@ import { brand, colors, fontFamily, VIDEO } from "./brand";
 import { toCards } from "./cards";
 import type { Lang, Reel, Shot } from "./reels";
 import { SkinSection } from "./SkinSection";
+import { Scene } from "./scenes/Scenes";
 
 export type ReelProps = {
   reel: Reel;
@@ -40,7 +41,7 @@ export const ReelVideo: React.FC<ReelProps> = ({ reel, lang, showSafeZones }) =>
             durationInFrames={Math.round((shot.end - shot.start) * fps)}
             name={`Кадр ${shot.n}`}
           >
-            <ShotBackground reel={reel} shot={shot} />
+            <ShotBackground reel={reel} shot={shot} lang={lang} />
           </Sequence>
         ))
       )}
@@ -70,8 +71,8 @@ export const ReelVideo: React.FC<ReelProps> = ({ reel, lang, showSafeZones }) =>
   );
 };
 
-// Отснятый клип, а пока его нет — раскадровка в палитре ролика
-const ShotBackground: React.FC<{ reel: Reel; shot: Shot }> = ({ reel, shot }) => {
+// Отснятый клип; пока его нет — сцена продукта, нарисованная кодом; без сцены — раскадровка
+const ShotBackground: React.FC<{ reel: Reel; shot: Shot; lang: Lang }> = ({ reel, shot, lang }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   // Медленный наезд, как в стиле бренда: без резких движений
@@ -93,6 +94,11 @@ const ShotBackground: React.FC<{ reel: Reel; shot: Shot }> = ({ reel, shot }) =>
         />
       </AbsoluteFill>
     );
+  }
+
+  if (shot.scene) {
+    const tint = reel.palette.includes("powder") ? mix(colors.linen, colors.powder, 0.45) : colors.linen;
+    return <Scene shot={shot} lang={lang} tint={tint} />;
   }
 
   const base = colors[reel.palette[0] ?? "linen"];
@@ -202,6 +208,16 @@ const EndCard: React.FC<{ reel: Reel; lang: Lang }> = ({ reel, lang }) => {
 
   return (
     <AbsoluteFill style={{ alignItems: "center" }}>
+      {/* Мягкая вуаль сверху, чтобы логотип читался поверх пластины и реквизита */}
+      <AbsoluteFill
+        style={{
+          opacity: appear,
+          background:
+            reel.kind === "animation"
+              ? "linear-gradient(180deg, rgba(43,43,43,0) 0%, rgba(43,43,43,0.55) 22%, rgba(43,43,43,0) 48%)"
+              : "linear-gradient(180deg, rgba(243,233,225,0) 0%, rgba(243,233,225,0.88) 24%, rgba(243,233,225,0) 48%)",
+        }}
+      />
       <div
         style={{
           position: "absolute",
@@ -273,8 +289,8 @@ const zone = (top: number, height: number): React.CSSProperties => ({
   borderBottom: "2px dashed rgba(220,0,120,0.6)",
 });
 
-const mix = (a: string, b: string) => {
+const mix = (a: string, b: string, k = 0.18) => {
   const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
   const [x, y] = [p(a), p(b)];
-  return `rgb(${x.map((v, i) => Math.round(v * 0.82 + y[i] * 0.18)).join(",")})`;
+  return `rgb(${x.map((v, i) => Math.round(v * (1 - k) + y[i] * k)).join(",")})`;
 };

@@ -1,7 +1,7 @@
 // Титр кадра → карточки до N слов. Та же логика, что в scripts/check.mjs
 export const toCards = (text: string, maxWords: number): string[] => {
   const out: string[] = [];
-  for (const sentence of text.split(/(?<=[.!?])\s+/).filter(Boolean)) {
+  for (const sentence of text.split(/(?<=[^\d\s][.!?])\s+/).filter(Boolean)) {
     const w = sentence.split(/\s+/);
     // Делим ровно, чтобы не оставлять «висящее» слово на отдельной карточке
     const parts = Math.ceil(w.length / maxWords);

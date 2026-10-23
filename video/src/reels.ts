@@ -19,6 +19,15 @@ export type Shot = {
   sound: string;
   // Путь к отснятому клипу внутри video/public, например "footage/reel-01/shot-1.mp4"
   clip?: string;
+  // Сцена продукта, пока нет клипа: см. SCENES в src/scenes/Scenes.tsx
+  scene?: string;
+  // Надпись на предмете в кадре (календарь, карточка) и подпись под ней
+  label?: Record<Lang, string>;
+  sub?: Record<Lang, string>;
+  // Реквизит натюрморта: pack, cup, socks, sheet
+  props?: string[];
+  mood?: "morning" | "evening";
+  accent?: boolean;
 };
 
 export type Reel = {

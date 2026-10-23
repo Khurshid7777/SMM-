@@ -21,7 +21,7 @@ const lower = (s) => s.toLocaleLowerCase("ru");
 // Разбивка титра на карточки по предложениям и до N слов — та же логика, что в video/src/cards.ts
 const toCards = (text, max) => {
   const out = [];
-  for (const sentence of text.split(/(?<=[.!?])\s+/).filter(Boolean)) {
+  for (const sentence of text.split(/(?<=[^\d\s][.!?])\s+/).filter(Boolean)) {
     const w = sentence.split(/\s+/);
     // Делим ровно, чтобы не оставлять «висящее» слово на отдельной карточке
     const parts = Math.ceil(w.length / max);
@@ -71,6 +71,9 @@ for (const file of files) {
     for (const ban of forbidden.visual_bans) {
       if (visual.includes(ban)) errors.push(`кадр ${s.n}: в кадре запрещённое «${ban}»`);
     }
+    const scenes = schema.properties.shots.items.properties.scene.enum;
+    if (s.scene && !scenes.includes(s.scene)) errors.push(`кадр ${s.n}: неизвестная сцена «${s.scene}»`);
+    if (reel.kind === "footage" && !s.clip && !s.scene) warnings.push(`кадр ${s.n}: нет ни клипа, ни сцены — в ролике будет текстовая раскадровка`);
   });
   if (shots.length && Math.abs(shots.at(-1).end - reel.length_sec) > 0.001)
     errors.push(`последний кадр кончается в ${shots.at(-1).end}, а length_sec = ${reel.length_sec}`);
