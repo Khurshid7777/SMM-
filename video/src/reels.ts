@@ -28,6 +28,10 @@ export type Shot = {
   props?: string[];
   mood?: "morning" | "evening";
   accent?: boolean;
+  // Пилюли-преимущества под заголовком
+  chips?: Record<Lang, string[]>;
+  // Цвет фона кадра, если отличается от фона ролика
+  backdrop?: string;
 };
 
 export type Reel = {
@@ -40,6 +44,8 @@ export type Reel = {
   palette: PaletteKey[];
   shots: Shot[];
   shows_product: boolean;
+  // Пастельный фон студии: linen, powder, mist, white
+  backdrop?: string;
   disclaimer: boolean;
   music?: string;
 };

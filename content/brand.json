@@ -9,12 +9,14 @@
     "white": "#FFFFFF",
     "graphite": "#2B2B2B",
     "teal": "#1F6F6B",
-    "powder": "#E8C9C0"
+    "powder": "#E8C9C0",
+    "mist": "#DCE7E4",
+    "ink": "#1F1F1F"
   },
   "font": {
-    "family": "Onest",
+    "family": "Montserrat",
     "weight": 600,
-    "_note": "Manrope из брендбука не содержит узбекских қ ғ ҳ (только ў), поэтому титры набираются Onest (OFL) — близкий гротеск с полной кириллицей. Если бренд-кит Claude Design даст другой шрифт, проверьте в нём ў қ ғ ҳ."
+    "_note": "Геометрический гротеск в духе Sofia Pro (Hims & Hers). Sofia Pro платный и без узбекской кириллицы; Montserrat (OFL) содержит ў қ ғ ҳ. Manrope не подходит: нет қ ғ ҳ. Любой новый шрифт проверяйте на ў қ ғ ҳ Ў Қ Ғ Ҳ."
   },
   "video": {
     "width": 1080,
@@ -36,5 +38,28 @@
     "ru": "При сомнениях обратитесь к врачу",
     "uz": "Шубҳа бўлса, шифокорга мурожаат қилинг"
   },
-  "instagram": "@sil.icare"
+  "instagram": "@sil.icare",
+  "style": {
+    "_reference": "DTC-стиль Hims & Hers: один предмет на бесшовном пастельном фоне, мягкий софтбокс сверху, контактная тень; крупный заголовок слева с маленькой буквы; плашки-пилюли; много воздуха.",
+    "backdrops": [
+      "linen",
+      "powder",
+      "mist",
+      "white"
+    ],
+    "headline": {
+      "align": "left",
+      "size_hook": 96,
+      "size": 80,
+      "weight": 600,
+      "tracking_em": -0.025,
+      "leading": 1.04,
+      "top_px": 300
+    },
+    "chip": {
+      "size": 34,
+      "radius": 999,
+      "bg": "rgba(255,255,255,0.72)"
+    }
+  }
 }

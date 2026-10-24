@@ -67,7 +67,9 @@
           "white",
           "graphite",
           "teal",
-          "powder"
+          "powder",
+          "mist",
+          "ink"
         ]
       }
     },
@@ -152,7 +154,7 @@
               "blanket",
               "phone"
             ],
-            "description": "Сцена продукта, нарисованная кодом, пока нет клипа (video/src/scenes/Scenes.tsx)"
+            "description": "3D-сцена продукта, пока нет клипа (video/src/three/scenes.tsx)"
           },
           "label": {
             "type": "object",
@@ -204,6 +206,38 @@
           },
           "accent": {
             "type": "boolean"
+          },
+          "chips": {
+            "type": "object",
+            "required": [
+              "ru",
+              "uz"
+            ],
+            "properties": {
+              "ru": {
+                "type": "array",
+                "maxItems": 3,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "uz": {
+                "type": "array",
+                "maxItems": 3,
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Пилюли-преимущества под заголовком; каждое — утверждение с источником в claims"
+          },
+          "backdrop": {
+            "enum": [
+              "linen",
+              "powder",
+              "mist",
+              "white"
+            ]
           }
         }
       }
@@ -257,6 +291,15 @@
     "music": {
       "type": "string",
       "description": "Путь к лицензированному треку внутри video/public"
+    },
+    "backdrop": {
+      "enum": [
+        "linen",
+        "powder",
+        "mist",
+        "white"
+      ],
+      "description": "Пастельный фон 3D-студии"
     }
   }
 }

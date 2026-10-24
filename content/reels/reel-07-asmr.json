@@ -10,7 +10,8 @@
   "palette": [
     "white",
     "linen",
-    "teal"
+    "teal",
+    "mist"
   ],
   "hook": {
     "ru": "Silicare",
@@ -25,7 +26,17 @@
       "text_ru": "Silicare",
       "text_uz": "Silicare",
       "sound": "Шелест картона",
-      "scene": "pack-open"
+      "scene": "pack-open",
+      "chips": {
+        "ru": [
+          "Многоразовый",
+          "Моется водой"
+        ],
+        "uz": [
+          "Кўп марта ишлатилади",
+          "Сув билан ювилади"
+        ]
+      }
     },
     {
       "n": 2,
@@ -92,5 +103,6 @@
     }
   ],
   "reviewed_by_native_uz": false,
-  "approved_by_owner": false
+  "approved_by_owner": false,
+  "backdrop": "mist"
 }

@@ -73,6 +73,7 @@ for (const file of files) {
     }
     const scenes = schema.properties.shots.items.properties.scene.enum;
     if (s.scene && !scenes.includes(s.scene)) errors.push(`кадр ${s.n}: неизвестная сцена «${s.scene}»`);
+    if (s.chips && (s.chips.ru?.length ?? 0) !== (s.chips.uz?.length ?? 0)) errors.push(`кадр ${s.n}: число пилюль RU и UZ не совпадает`);
     if (reel.kind === "footage" && !s.clip && !s.scene) warnings.push(`кадр ${s.n}: нет ни клипа, ни сцены — в ролике будет текстовая раскадровка`);
   });
   if (shots.length && Math.abs(shots.at(-1).end - reel.length_sec) > 0.001)
@@ -87,6 +88,8 @@ for (const file of files) {
     ...shots.flatMap((s) => [
       [`кадр ${s.n} RU`, s.text_ru],
       [`кадр ${s.n} UZ`, s.text_uz],
+      ...(s.chips?.ru ?? []).map((c) => [`кадр ${s.n} пилюля RU`, c]),
+      ...(s.chips?.uz ?? []).map((c) => [`кадр ${s.n} пилюля UZ`, c]),
     ]),
   ];
   for (const [where, raw] of texts) {

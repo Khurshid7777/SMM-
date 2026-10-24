@@ -10,7 +10,8 @@
   "palette": [
     "white",
     "linen",
-    "teal"
+    "teal",
+    "mist"
   ],
   "hook": {
     "ru": "Пластырь многоразовый",
@@ -102,5 +103,6 @@
     }
   ],
   "reviewed_by_native_uz": false,
-  "approved_by_owner": false
+  "approved_by_owner": false,
+  "backdrop": "mist"
 }

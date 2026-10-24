@@ -2,19 +2,19 @@ import React from "react";
 import {
   AbsoluteFill,
   Audio,
+  Easing,
   interpolate,
   OffthreadVideo,
   Sequence,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
-  Easing,
 } from "remotion";
 import { brand, colors, fontFamily, VIDEO } from "./brand";
 import { toCards } from "./cards";
 import type { Lang, Reel, Shot } from "./reels";
 import { SkinSection } from "./SkinSection";
-import { Scene } from "./scenes/Scenes";
+import { Scene3D } from "./three/scenes";
 
 export type ReelProps = {
   reel: Reel;
@@ -23,46 +23,48 @@ export type ReelProps = {
   showSafeZones: boolean;
 };
 
-const ease = Easing.bezier(0.33, 0, 0.2, 1);
+const ease = Easing.bezier(0.22, 1, 0.36, 1);
+const S = brand.style;
+
+export const backdropOf = (reel: Reel, shot?: Shot) =>
+  colors[(shot?.backdrop ?? reel.backdrop ?? "linen") as keyof typeof colors];
 
 export const ReelVideo: React.FC<ReelProps> = ({ reel, lang, showSafeZones }) => {
   const { fps } = useVideoConfig();
   const last = reel.shots[reel.shots.length - 1];
+  const dark = reel.kind === "animation";
+  const span = (s: Shot) => ({
+    from: Math.round(s.start * fps),
+    durationInFrames: Math.round((s.end - s.start) * fps),
+  });
 
   return (
-    <AbsoluteFill style={{ backgroundColor: colors.linen, fontFamily }}>
-      {reel.kind === "animation" ? (
+    <AbsoluteFill style={{ backgroundColor: backdropOf(reel), fontFamily }}>
+      {dark ? (
         <SkinSection reel={reel} />
       ) : (
         reel.shots.map((shot) => (
-          <Sequence
-            key={shot.n}
-            from={Math.round(shot.start * fps)}
-            durationInFrames={Math.round((shot.end - shot.start) * fps)}
-            name={`Кадр ${shot.n}`}
-          >
+          <Sequence key={shot.n} {...span(shot)} name={`Кадр ${shot.n}`}>
             <ShotBackground reel={reel} shot={shot} lang={lang} />
           </Sequence>
         ))
       )}
 
-      {reel.shots.map((shot) => (
-        <Sequence
-          key={`t${shot.n}`}
-          from={Math.round(shot.start * fps)}
-          durationInFrames={Math.round((shot.end - shot.start) * fps)}
-          name={`Титры ${shot.n}`}
-        >
-          <Titles text={lang === "ru" ? shot.text_ru : shot.text_uz} isHook={shot.n === 1} />
-        </Sequence>
-      ))}
+      {reel.shots.map((shot) =>
+        shot === last ? null : (
+          <Sequence key={`t${shot.n}`} {...span(shot)} name={`Заголовок ${shot.n}`}>
+            <Headline
+              text={lang === "ru" ? shot.text_ru : shot.text_uz}
+              hook={shot.n === 1}
+              dark={dark}
+              chips={shot.chips?.[lang]}
+            />
+          </Sequence>
+        ),
+      )}
 
-      <Sequence
-        from={Math.round(last.start * fps)}
-        durationInFrames={Math.round((last.end - last.start) * fps)}
-        name="Финал: логотип"
-      >
-        <EndCard reel={reel} lang={lang} />
+      <Sequence {...span(last)} name="Финал: логотип и действие">
+        <EndCard reel={reel} lang={lang} cta={lang === "ru" ? last.text_ru : last.text_uz} dark={dark} />
       </Sequence>
 
       {reel.music ? <Music src={reel.music} /> : null}
@@ -71,167 +73,174 @@ export const ReelVideo: React.FC<ReelProps> = ({ reel, lang, showSafeZones }) =>
   );
 };
 
-// Отснятый клип; пока его нет — сцена продукта, нарисованная кодом; без сцены — раскадровка
+// Отснятый клип; пока его нет — 3D-сцена продукта; без сцены — раскадровка
 const ShotBackground: React.FC<{ reel: Reel; shot: Shot; lang: Lang }> = ({ reel, shot, lang }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  // Медленный наезд, как в стиле бренда: без резких движений
   const scale = interpolate(frame, [0, durationInFrames], [1, 1.06], { extrapolateRight: "clamp" });
+  // Мягкий вход кадра из цвета фона
+  const fadeIn = interpolate(frame, [0, 5], [0, 1], { extrapolateRight: "clamp" });
 
+  let body: React.ReactNode;
   if (shot.clip) {
-    return (
-      <AbsoluteFill style={{ overflow: "hidden" }}>
-        <OffthreadVideo
-          src={staticFile(shot.clip)}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            transform: `scale(${scale})`,
-            // Тёплая мягкая коррекция, без «пластика»
-            filter: "saturate(0.94) sepia(0.06) contrast(0.98)",
-          }}
-        />
-      </AbsoluteFill>
-    );
-  }
-
-  if (shot.scene) {
-    const tint = reel.palette.includes("powder") ? mix(colors.linen, colors.powder, 0.45) : colors.linen;
-    return <Scene shot={shot} lang={lang} tint={tint} />;
-  }
-
-  const base = colors[reel.palette[0] ?? "linen"];
-  const accent = colors[reel.palette[reel.palette.length - 1] ?? "teal"];
-  return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
-      <AbsoluteFill
+    body = (
+      <OffthreadVideo
+        src={staticFile(shot.clip)}
         style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
           transform: `scale(${scale})`,
-          background: `radial-gradient(120% 80% at 20% 25%, ${colors.white} 0%, ${base} 55%, ${mix(base, accent)} 100%)`,
+          filter: "saturate(0.94) sepia(0.06) contrast(0.98)",
         }}
       />
-      {/* Фактура льна */}
-      <AbsoluteFill
-        style={{
-          opacity: 0.18,
-          backgroundImage:
-            "repeating-linear-gradient(0deg, rgba(43,43,43,0.08) 0 1px, transparent 1px 5px), repeating-linear-gradient(90deg, rgba(43,43,43,0.06) 0 1px, transparent 1px 6px)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          top: 300,
-          left: VIDEO.safe_side_px,
-          right: VIDEO.safe_side_px,
-          color: colors.graphite,
-          opacity: 0.55,
-          fontSize: 34,
-          fontWeight: 500,
-          lineHeight: 1.35,
-        }}
-      >
-        <div style={{ fontSize: 26, letterSpacing: 4, marginBottom: 12 }}>
-          РАСКАДРОВКА · КАДР {shot.n}
-        </div>
+    );
+  } else if (shot.scene) {
+    body = <Scene3D shot={shot} lang={lang} bg={backdropOf(reel, shot)} />;
+  } else {
+    body = (
+      <div style={{ position: "absolute", top: 760, left: VIDEO.safe_side_px, right: VIDEO.safe_side_px, color: colors.graphite, opacity: 0.5, fontSize: 34, lineHeight: 1.35 }}>
+        <div style={{ fontSize: 26, letterSpacing: 4, marginBottom: 12 }}>РАСКАДРОВКА · КАДР {shot.n}</div>
         {shot.visual}
       </div>
-    </AbsoluteFill>
-  );
+    );
+  }
+  return <AbsoluteFill style={{ overflow: "hidden", opacity: fadeIn }}>{body}</AbsoluteFill>;
 };
 
-// Карточки титров: до 7 слов, мягкое появление, низ 300 px свободен
-const Titles: React.FC<{ text: string; isHook: boolean }> = ({ text, isHook }) => {
+// Заголовок как на сайтах DTC-брендов: слева, крупно, плотно; слова появляются по очереди
+const Headline: React.FC<{ text: string; hook: boolean; dark: boolean; chips?: string[] }> = ({ text, hook, dark, chips }) => {
   const { durationInFrames } = useVideoConfig();
   const cards = toCards(text, VIDEO.max_words_per_card);
   if (!cards.length) return null;
   const per = Math.floor(durationInFrames / cards.length);
-
   return (
     <>
       {cards.map((card, i) => (
         <Sequence key={i} from={i * per} durationInFrames={i === cards.length - 1 ? durationInFrames - i * per : per}>
-          <Card text={card} big={isHook && i === 0} />
+          <HeadlineCard text={card} size={hook && i === 0 ? S.headline.size_hook : S.headline.size} dark={dark} chips={i === 0 ? chips : undefined} />
         </Sequence>
       ))}
     </>
   );
 };
 
-const Card: React.FC<{ text: string; big: boolean }> = ({ text, big }) => {
+const HeadlineCard: React.FC<{ text: string; size: number; dark: boolean; chips?: string[] }> = ({ text, size, dark, chips }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const fadeIn = interpolate(frame, [0, 9], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  const fadeOut = interpolate(frame, [durationInFrames - 6, durationInFrames], [1, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-  const y = interpolate(frame, [0, 12], [18, 0], { extrapolateRight: "clamp", easing: ease });
-
+  const out = interpolate(frame, [durationInFrames - 6, durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const words = text.split(/\s+/);
   return (
-    <AbsoluteFill
-      style={{
-        justifyContent: "flex-end",
-        alignItems: "center",
-        paddingBottom: VIDEO.safe_bottom_px + 170,
-        paddingLeft: VIDEO.safe_side_px,
-        paddingRight: VIDEO.safe_side_px,
-      }}
-    >
+    <AbsoluteFill style={{ paddingTop: S.headline.top_px, paddingLeft: VIDEO.safe_side_px, paddingRight: VIDEO.safe_side_px + 40, opacity: out }}>
       <div
         style={{
-          opacity: Math.min(fadeIn, fadeOut),
-          transform: `translateY(${y}px)`,
-          backgroundColor: "rgba(243, 233, 225, 0.9)",
-          color: colors.graphite,
-          borderRadius: 28,
-          padding: big ? "34px 44px" : "26px 38px",
-          fontSize: big ? 84 : 64,
-          fontWeight: 600,
-          lineHeight: 1.18,
-          textAlign: "center",
-          maxWidth: 1080 - VIDEO.safe_side_px * 2,
-          boxShadow: "0 10px 40px rgba(43,43,43,0.12)",
+          fontSize: size,
+          fontWeight: S.headline.weight,
+          lineHeight: S.headline.leading,
+          letterSpacing: `${S.headline.tracking_em}em`,
+          color: dark ? colors.white : colors.ink,
+          maxWidth: 900,
         }}
       >
-        {text}
+        {words.map((w, i) => {
+          const k = interpolate(frame, [i * 2, i * 2 + 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
+          return (
+            <span key={i} style={{ display: "inline-block", opacity: k, transform: `translateY(${(1 - k) * 28}px)`, marginRight: "0.24em" }}>
+              {w}
+            </span>
+          );
+        })}
       </div>
+      {chips?.length ? (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginTop: 36 }}>
+          {chips.map((c, i) => {
+            const k = interpolate(frame, [10 + i * 4, 24 + i * 4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
+            return (
+              <div
+                key={c}
+                style={{
+                  opacity: k,
+                  transform: `translateY(${(1 - k) * 16}px)`,
+                  padding: "16px 28px",
+                  borderRadius: S.chip.radius,
+                  background: S.chip.bg,
+                  border: "1.5px solid rgba(31,31,31,0.08)",
+                  fontSize: S.chip.size,
+                  fontWeight: 600,
+                  color: colors.ink,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                }}
+              >
+                <span style={{ width: 12, height: 12, borderRadius: 6, background: colors.teal }} />
+                {c}
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
     </AbsoluteFill>
   );
 };
 
-// Логотип sil·icare by Yafho, дисклеймер медизделия — только если продукт в кадре
-const EndCard: React.FC<{ reel: Reel; lang: Lang }> = ({ reel, lang }) => {
+// Финал: знак sil·icare, кнопка-действие, дисклеймер медизделия (если продукт в кадре)
+const EndCard: React.FC<{ reel: Reel; lang: Lang; cta: string; dark: boolean }> = ({ reel, lang, cta, dark }) => {
   const frame = useCurrentFrame();
-  const appear = interpolate(frame, [6, 24], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
-
+  const k = (a: number, b: number) => interpolate(frame, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
+  const ink = dark ? colors.white : colors.ink;
+  const ctaParts = toCards(cta, 12);
   return (
     <AbsoluteFill style={{ alignItems: "center" }}>
-      {/* Мягкая вуаль сверху, чтобы логотип читался поверх пластины и реквизита */}
       <AbsoluteFill
         style={{
-          opacity: appear,
-          background:
-            reel.kind === "animation"
-              ? "linear-gradient(180deg, rgba(43,43,43,0) 0%, rgba(43,43,43,0.55) 22%, rgba(43,43,43,0) 48%)"
-              : "linear-gradient(180deg, rgba(243,233,225,0) 0%, rgba(243,233,225,0.88) 24%, rgba(243,233,225,0) 48%)",
+          opacity: k(0, 16),
+          background: dark
+            ? "linear-gradient(180deg, rgba(43,43,43,0) 6%, rgba(43,43,43,0.6) 18%, rgba(43,43,43,0) 42%)"
+            : `linear-gradient(180deg, rgba(255,255,255,0) 6%, ${hexA(backdropOf(reel), 0.9)} 17%, ${hexA(backdropOf(reel), 0)} 44%)`,
         }}
       />
+      <div style={{ position: "absolute", top: 300, textAlign: "center", color: ink, opacity: k(2, 18), transform: `translateY(${(1 - k(2, 18)) * 20}px)` }}>
+        <div style={{ fontSize: 118, fontWeight: 700, letterSpacing: "-0.03em", lineHeight: 1 }}>
+          sil<span style={{ color: colors.teal }}>·</span>icare
+        </div>
+        <div style={{ fontSize: 36, fontWeight: 500, opacity: 0.7, marginTop: 10 }}>
+          {brand.endorsement} · {brand.instagram}
+        </div>
+      </div>
       <div
         style={{
           position: "absolute",
-          top: 520,
-          opacity: appear,
-          transform: `translateY(${(1 - appear) * 16}px)`,
-          textAlign: "center",
-          color: reel.kind === "animation" ? colors.white : colors.graphite,
+          top: 530,
+          opacity: k(10, 26),
+          transform: `translateY(${(1 - k(10, 26)) * 20}px)`,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 14,
         }}
       >
-        <div style={{ fontSize: 120, fontWeight: 700, letterSpacing: -2 }}>
-          sil<span style={{ color: colors.teal }}>·</span>icare
+        <div
+          style={{
+            padding: "26px 52px",
+            borderRadius: 999,
+            background: dark ? colors.white : colors.ink,
+            color: dark ? colors.ink : colors.white,
+            fontSize: 44,
+            fontWeight: 600,
+            letterSpacing: "-0.01em",
+            maxWidth: 900,
+            textAlign: "center",
+            lineHeight: 1.2,
+          }}
+        >
+          {ctaParts[0]}
         </div>
-        <div style={{ fontSize: 40, fontWeight: 500, opacity: 0.75, marginTop: -6 }}>{brand.endorsement}</div>
+        {ctaParts.slice(1).map((p) => (
+          <div key={p} style={{ fontSize: 36, fontWeight: 500, color: ink, opacity: 0.8, maxWidth: 860, textAlign: "center", lineHeight: 1.25 }}>
+            {p}
+          </div>
+        ))}
       </div>
       {reel.shows_product && reel.disclaimer ? (
         <div
@@ -240,12 +249,15 @@ const EndCard: React.FC<{ reel: Reel; lang: Lang }> = ({ reel, lang }) => {
             bottom: VIDEO.safe_bottom_px,
             left: VIDEO.safe_side_px,
             right: VIDEO.safe_side_px,
-            opacity: appear * 0.85,
-            fontSize: 30,
+            opacity: k(14, 30) * 0.9,
+            fontSize: 28,
             fontWeight: 500,
             lineHeight: 1.3,
             textAlign: "center",
-            color: reel.kind === "animation" ? colors.linen : colors.graphite,
+            color: ink,
+            padding: "14px 24px",
+            borderRadius: 24,
+            background: dark ? "rgba(43,43,43,0.55)" : "rgba(255,255,255,0.6)",
           }}
         >
           {brand.disclaimer[lang]}
@@ -289,8 +301,7 @@ const zone = (top: number, height: number): React.CSSProperties => ({
   borderBottom: "2px dashed rgba(220,0,120,0.6)",
 });
 
-const mix = (a: string, b: string, k = 0.18) => {
-  const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
-  const [x, y] = [p(a), p(b)];
-  return `rgb(${x.map((v, i) => Math.round(v * (1 - k) + y[i] * k)).join(",")})`;
+const hexA = (hex: string, a: number) => {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+  return `rgba(${r},${g},${b},${a})`;
 };
