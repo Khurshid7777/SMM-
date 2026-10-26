@@ -1,0 +1,55 @@
+{
+  "_status": "Этап 3: блок «box» на узбекской латинице (апостроф ʻ U+02BB). НА ВЫЧИТКУ НОСИТЕЛЮ. Остальные блоки — этап 4.",
+  "box": {
+    "descriptor": "Chandiqlarni parvarishlash uchun silikon lenta",
+    "size_plate": "{width} sm × {length} m",
+    "icons": [
+      "Tibbiy silikon",
+      "Koʻp martalik",
+      "Oʻlchamga qirqiladi"
+    ],
+    "how_it_works_title": "Qanday ishlaydi",
+    "how_it_works": [
+      "Teridagi namlikni saqlaydi",
+      "Ishqalanish va tortilishdan himoyalaydi",
+      "Chandiq tinchroq yetiladi"
+    ],
+    "steps_title": "4 qadam",
+    "steps": [
+      "Terini tozalang va quriting",
+      "1 sm zaxira bilan qirqing, burchaklarini yumaloqlang",
+      "Tortmasdan yopishtiring",
+      "Kuniga 12 soatdan koʻproq taqing"
+    ],
+    "course": "Kurs: kuniga 12+ soat, 12 haftadan boshlab",
+    "warning": "Faqat bitgan teriga. Ochiq yaraga surtmang.",
+    "indications_title": "Koʻrsatmalar",
+    "indications": "Operatsiya, kesarcha kesish, kuyish va jarohatdan keyingi gipertrofik va keloid chandiqlar — toʻliq bitgandan va choklar olingandan keyin.",
+    "composition_title": "Tarkibi",
+    "composition": "Tibbiy silikon [TEKSHIRISH]. Lateks yoʻq [TASDIQLASH].",
+    "contra_title": "Qarshi koʻrsatmalar",
+    "contra": "Ochiq yara, chok, qobiq va yalligʻlangan teriga surtmang. Taʼsirlanish boʻlsa, yechib, shifokorga murojaat qiling. Bolalar va homiladorlikda — shifokor bilan kelishib.",
+    "care_title": "Parvarish va qayta ishlatish",
+    "care": "Dushdan oldin yeching, sovunsiz iliq suvda yuving, havoda quriting. Bitta boʻlakning ishlatish muddati — [YAFHO YOʻRIQNOMASI BILAN TEKSHIRISH].",
+    "storage_title": "Saqlash",
+    "storage": "+5…+30 °C da, quruq joyda, toʻgʻri quyosh nurisiz [TEKSHIRISH].",
+    "top_size": "{width} sm × {length} m",
+    "inside_thanks": "Oʻzingizga gʻamxoʻrlik qilganingiz uchun rahmat",
+    "inside_qr": "Video-yoʻriqnoma va savollarga javoblar: @sil.icare",
+    "steps_short": [
+      "Tozalash",
+      "Qirqish +1 sm",
+      "Yopishtirish",
+      "12+ soat taqish"
+    ],
+    "legal_product_label": "Chandiqlarni parvarishlash uchun silikon lenta",
+    "legal_qty": "1 rulon",
+    "legal_manufacturer_label": "Ishlab chiqaruvchi",
+    "legal_importer_label": "Import qiluvchi / OʻzR dagi vakolatli vakil",
+    "legal_reg_label": "Roʻyxatga olish guvohnomasi",
+    "legal_nonsterile": "Nosteril",
+    "legal_storage_short": "+5…+30 °C da quruq joyda saqlang",
+    "legal_ifu": "Qoʻllashdan oldin yoʻriqnoma bilan tanishing",
+    "warning_short": "Faqat bitgan teriga"
+  }
+}

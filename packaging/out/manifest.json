@@ -1,0 +1,289 @@
+{
+ "bleed": 3.0,
+ "skus": [
+  {
+   "sku": "SC-4150",
+   "geometry": {
+    "D": 48.97886951075302,
+    "D_measured": false,
+    "d": 38,
+    "t": 0.5,
+    "inner_side": 59.05,
+    "inner_h": 46,
+    "W": 60.0,
+    "H": 46.95,
+    "void_pct": 53.01386189316173
+   },
+   "dieline_mm": [
+    253.0,
+    194.95
+   ],
+   "sheet_mm": [
+    259.0,
+    203.95
+   ],
+   "panel_mm": {
+    "back": [
+     13.0,
+     74.0,
+     60.0,
+     46.95
+    ],
+    "side_uz": [
+     73.0,
+     74.0,
+     60.0,
+     46.95
+    ],
+    "front": [
+     133.0,
+     74.0,
+     60.0,
+     46.95
+    ],
+    "side_ru": [
+     193.0,
+     74.0,
+     60.0,
+     46.95
+    ],
+    "top": [
+     13.0,
+     15.0,
+     60.0,
+     59.0
+    ],
+    "bottom": [
+     13.0,
+     120.95,
+     60.0,
+     59.0
+    ]
+   },
+   "files": {
+    "print": "dieline_SC-4150_print.svg",
+    "varnish": "dieline_SC-4150_varnish.svg",
+    "crease": "dieline_SC-4150_crease.svg",
+    "cut": "dieline_SC-4150_cut.svg",
+    "combined": "dieline_SC-4150.svg",
+    "inside": "dieline_SC-4150_inside.svg",
+    "face_front": "box_front_SC-4150.svg",
+    "face_side_ru": "box_side_ru_SC-4150.svg",
+    "face_top": "box_top_SC-4150.svg"
+   }
+  },
+  {
+   "sku": "SC-4300",
+   "geometry": {
+    "D": 57.912514339326904,
+    "D_measured": false,
+    "d": 38,
+    "t": 0.5,
+    "inner_side": 60.912514339326904,
+    "inner_h": 46,
+    "W": 61.86251433932691,
+    "H": 46.95,
+    "void_pct": 38.26608363368466
+   },
+   "dieline_mm": [
+    260.4500573573076,
+    198.6750286786538
+   ],
+   "sheet_mm": [
+    266.4500573573076,
+    207.6750286786538
+   ],
+   "panel_mm": {
+    "back": [
+     13.0,
+     75.8625143393269,
+     61.86251433932691,
+     46.95
+    ],
+    "side_uz": [
+     74.8625143393269,
+     75.8625143393269,
+     61.86251433932691,
+     46.95
+    ],
+    "front": [
+     136.7250286786538,
+     75.8625143393269,
+     61.86251433932691,
+     46.95
+    ],
+    "side_ru": [
+     198.58754301798072,
+     75.8625143393269,
+     61.86251433932691,
+     46.95
+    ],
+    "top": [
+     13.0,
+     15.0,
+     61.86251433932691,
+     60.86251433932691
+    ],
+    "bottom": [
+     13.0,
+     122.81251433932691,
+     61.86251433932691,
+     60.86251433932691
+    ]
+   },
+   "files": {
+    "print": "dieline_SC-4300_print.svg",
+    "varnish": "dieline_SC-4300_varnish.svg",
+    "crease": "dieline_SC-4300_crease.svg",
+    "cut": "dieline_SC-4300_cut.svg",
+    "combined": "dieline_SC-4300.svg",
+    "inside": "dieline_SC-4300_inside.svg",
+    "face_front": "box_front_SC-4300.svg",
+    "face_side_ru": "box_side_ru_SC-4300.svg",
+    "face_top": "box_top_SC-4300.svg"
+   }
+  },
+  {
+   "sku": "SC-5150",
+   "geometry": {
+    "D": 48.97886951075302,
+    "D_measured": false,
+    "d": 38,
+    "t": 0.5,
+    "inner_side": 59.05,
+    "inner_h": 56,
+    "W": 60.0,
+    "H": 56.95,
+    "void_pct": 51.75530462244286
+   },
+   "dieline_mm": [
+    253.0,
+    204.95
+   ],
+   "sheet_mm": [
+    259.0,
+    213.95
+   ],
+   "panel_mm": {
+    "back": [
+     13.0,
+     74.0,
+     60.0,
+     56.95
+    ],
+    "side_uz": [
+     73.0,
+     74.0,
+     60.0,
+     56.95
+    ],
+    "front": [
+     133.0,
+     74.0,
+     60.0,
+     56.95
+    ],
+    "side_ru": [
+     193.0,
+     74.0,
+     60.0,
+     56.95
+    ],
+    "top": [
+     13.0,
+     15.0,
+     60.0,
+     59.0
+    ],
+    "bottom": [
+     13.0,
+     130.95,
+     60.0,
+     59.0
+    ]
+   },
+   "files": {
+    "print": "dieline_SC-5150_print.svg",
+    "varnish": "dieline_SC-5150_varnish.svg",
+    "crease": "dieline_SC-5150_crease.svg",
+    "cut": "dieline_SC-5150_cut.svg",
+    "combined": "dieline_SC-5150.svg",
+    "inside": "dieline_SC-5150_inside.svg",
+    "face_front": "box_front_SC-5150.svg",
+    "face_side_ru": "box_side_ru_SC-5150.svg",
+    "face_top": "box_top_SC-5150.svg"
+   }
+  },
+  {
+   "sku": "SC-5300",
+   "geometry": {
+    "D": 57.912514339326904,
+    "D_measured": false,
+    "d": 38,
+    "t": 0.5,
+    "inner_side": 60.912514339326904,
+    "inner_h": 56,
+    "W": 61.86251433932691,
+    "H": 56.95,
+    "void_pct": 36.612496588158336
+   },
+   "dieline_mm": [
+    260.4500573573076,
+    208.67502867865383
+   ],
+   "sheet_mm": [
+    266.4500573573076,
+    217.67502867865383
+   ],
+   "panel_mm": {
+    "back": [
+     13.0,
+     75.8625143393269,
+     61.86251433932691,
+     56.95
+    ],
+    "side_uz": [
+     74.8625143393269,
+     75.8625143393269,
+     61.86251433932691,
+     56.95
+    ],
+    "front": [
+     136.7250286786538,
+     75.8625143393269,
+     61.86251433932691,
+     56.95
+    ],
+    "side_ru": [
+     198.58754301798072,
+     75.8625143393269,
+     61.86251433932691,
+     56.95
+    ],
+    "top": [
+     13.0,
+     15.0,
+     61.86251433932691,
+     60.86251433932691
+    ],
+    "bottom": [
+     13.0,
+     132.81251433932692,
+     61.86251433932691,
+     60.86251433932691
+    ]
+   },
+   "files": {
+    "print": "dieline_SC-5300_print.svg",
+    "varnish": "dieline_SC-5300_varnish.svg",
+    "crease": "dieline_SC-5300_crease.svg",
+    "cut": "dieline_SC-5300_cut.svg",
+    "combined": "dieline_SC-5300.svg",
+    "inside": "dieline_SC-5300_inside.svg",
+    "face_front": "box_front_SC-5300.svg",
+    "face_side_ru": "box_side_ru_SC-5300.svg",
+    "face_top": "box_top_SC-5300.svg"
+   }
+  }
+ ]
+}

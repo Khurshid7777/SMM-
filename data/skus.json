@@ -1,0 +1,120 @@
+{
+  "_source": "ТЗ-1 раздел 2; артикулы — yafho.com/product/186.html",
+  "_status": "ЗАМЕРЫ НЕ ПОЛУЧЕНЫ. Поля с assumed=true — условные значения для макета, не для печати. Заменить штангенциркулем: ширина ленты, наружный диаметр D, диаметр втулки d, толщина ленты t (с плёнкой, если есть).",
+  "common": {
+    "manufacturer": "HONY MEDICAL CO., LTD",
+    "manufacturer_address": "[ЗАПОЛНИТЬ: адрес]",
+    "product_name_ru": "Лента силиконовая для ухода за рубцами Silicare",
+    "product_name_uz-latn": "Chandiqlarni parvarishlash uchun silikon lenta Silicare",
+    "tape_thickness_mm": {
+      "value": 0.5,
+      "assumed": true,
+      "note": "Типичная толщина силиконовой ленты для рубцов 0,4–0,8 мм. Замерить."
+    },
+    "core_diameter_mm": {
+      "value": 38,
+      "assumed": true,
+      "note": "По фото рулона втулка ≈ 60 % наружного диаметра; стандартная втулка 1,5\" = 38,1 мм. Замерить."
+    },
+    "pouch_mm": {
+      "value": 1,
+      "assumed": true,
+      "note": "Толщина запаянного пакета, если есть"
+    },
+    "leaflet_mm": {
+      "value": 2,
+      "assumed": true,
+      "note": "Инструкция A5 в сложении"
+    },
+    "board_mm": 0.45,
+    "known_roll": {
+      "width_mm": 40,
+      "outer_diameter_mm": 55,
+      "note": "Единственный известный замер из ТЗ-1. Какой это SKU — не указано; по формуле намотки при t = 0,5 мм это ближе к 3 м (см. report.md)."
+    },
+    "min_panel_mm": {
+      "value": 60,
+      "note": "Конструктивный минимум ширины грани: ниже 60 мм двуязычная маркировка 6 pt и EAN-13 не помещаются. Если замеры дадут D < 57 мм, коробка всё равно не меньше 60 мм (пустоту гасит прокладка)."
+    }
+  },
+  "skus": [
+    {
+      "sku": "SC-4150",
+      "ref": "848033",
+      "width_mm": 40,
+      "length_m": 1.5,
+      "stripe": "150",
+      "label": "4",
+      "use_ru": "стартовый, один небольшой рубец",
+      "use_uz-latn": "boshlangʻich, bitta kichik chandiq",
+      "ean13": "[ЗАПОЛНИТЬ]",
+      "outer_diameter_mm": {
+        "value": null,
+        "assumed": true,
+        "note": "считается по формуле намотки из t и d, пока нет замера"
+      }
+    },
+    {
+      "sku": "SC-4300",
+      "ref": "848040",
+      "width_mm": 40,
+      "length_m": 3,
+      "stripe": "300",
+      "label": "4",
+      "use_ru": "курс 12 недель",
+      "use_uz-latn": "12 haftalik kurs",
+      "ean13": "[ЗАПОЛНИТЬ]",
+      "outer_diameter_mm": {
+        "value": null,
+        "assumed": true,
+        "note": "вероятно, это известный рулон D = 55 мм — подтвердить"
+      }
+    },
+    {
+      "sku": "SC-5150",
+      "ref": "848041",
+      "width_mm": 50,
+      "length_m": 1.5,
+      "stripe": "150",
+      "label": "5",
+      "use_ru": "широкий рубец, ожог",
+      "use_uz-latn": "keng chandiq, kuyish",
+      "ean13": "[ЗАПОЛНИТЬ]",
+      "outer_diameter_mm": {
+        "value": null,
+        "assumed": true,
+        "note": "по формуле"
+      }
+    },
+    {
+      "sku": "SC-5300",
+      "ref": "848042",
+      "width_mm": 50,
+      "length_m": 3,
+      "stripe": "300",
+      "label": "5",
+      "use_ru": "кесарево, длинные послеоперационные рубцы",
+      "use_uz-latn": "kesarcha kesish, uzun operatsiyadan keyingi chandiqlar",
+      "ean13": "[ЗАПОЛНИТЬ]",
+      "outer_diameter_mm": {
+        "value": null,
+        "assumed": true,
+        "note": "по формуле"
+      }
+    }
+  ],
+  "future": [
+    {
+      "width_mm": 25,
+      "note": "лицо/шея, дети — система должна принять без переделки"
+    },
+    {
+      "sheet_cm": "4 × 9",
+      "note": "готовые пластины"
+    },
+    {
+      "sheet_cm": "4 × 14",
+      "note": "готовые пластины"
+    }
+  ]
+}

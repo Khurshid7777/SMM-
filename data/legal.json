@@ -1,0 +1,51 @@
+{
+  "_note": "Обязательная маркировка медизделия (ТЗ-1, раздел 2). Все неизвестные данные — [ЗАПОЛНИТЬ]. Финальный список сверить с регистрационным досье и юристом.",
+  "registration_number": "[ЗАПОЛНИТЬ: № РУ]",
+  "registration_holder": "[ЗАПОЛНИТЬ: держатель РУ]",
+  "importer": {
+    "name": "[ЗАПОЛНИТЬ: импортёр]",
+    "address": "[ЗАПОЛНИТЬ: адрес]",
+    "phone": "[ЗАПОЛНИТЬ: тел.]"
+  },
+  "manufacturer": {
+    "name": "HONY MEDICAL CO., LTD",
+    "address": "[ЗАПОЛНИТЬ: адрес производителя]",
+    "country_ru": "Китай",
+    "country_uz-latn": "Xitoy"
+  },
+  "certificates": {
+    "ce": {
+      "present": false,
+      "note": "CE ставить только при наличии сертификата"
+    },
+    "iso13485": {
+      "present": false,
+      "note": "[ЗАПОЛНИТЬ: подтверждение]"
+    },
+    "latex_free": {
+      "present": false,
+      "note": "[ЗАПОЛНИТЬ: подтверждение «без латекса»]"
+    }
+  },
+  "non_sterile": true,
+  "lot_exp": "белое поле под краскоструй или стикер",
+  "datamatrix": {
+    "required": "[ЗАПОЛНИТЬ: нужна ли маркировка Asl belgisi для этой группы МИ]",
+    "zone_mm": 20
+  },
+  "symbols_iso15223": [
+    "manufacturer",
+    "ref",
+    "lot",
+    "exp",
+    "consult-ifu",
+    "keep-dry",
+    "do-not-use-if-damaged",
+    "md",
+    "non-sterile"
+  ],
+  "disclaimer": {
+    "ru": "Перед применением проконсультируйтесь со специалистом. Имеются противопоказания. [СВЕРИТЬ с юристом]",
+    "uz-latn": "Qoʻllashdan oldin mutaxassis bilan maslahatlashing. Qarshi koʻrsatmalar mavjud. [YURIST BILAN TEKSHIRISH]"
+  }
+}
