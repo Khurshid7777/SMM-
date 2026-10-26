@@ -1,0 +1,8 @@
+Use the style block in ТЗ-1, section 4. Attach approved box art and actual roll photos before generating product images. Use built-in image generation. No generated text; exact typography is added downstream.
+
+R1_box_closed.png: Approved box, closed, 3/4 view, soft light upper left. Match approved physical proportions and artwork. Transparent background; shadow separate.
+R1_box_open.png: Edit the approved closed frame: keep the exact same camera, lighting and composition, change only the top tuck flap to open, showing the actual reference roll inside. Transparent background.
+R1_roll.png: Actual reference roll alone, 3/4 view, 10 cm unrolled, transparent background; match tape colour, opacity, core and dimensions.
+R2_skin_forearm_tape.png: Edit supplied R2_skin_forearm.png. Keep the exact same camera, lighting, arm, scar and composition. Add only the reference tape over the scar, rounded corners, no tension. Preserve transparency. Do not change scar visibility outside the physically covered region.
+R2_hands_cut.png: Anatomically correct adult hands cutting the reference tape from the reference roll with small scissors; top-down, upper-left light, genuine transparent background. No labels or text.
+R5_lineup: Generate each approved SKU box as a separate transparent PNG; same angle and lighting. Assemble four boxes in code to preserve independent animation layers.

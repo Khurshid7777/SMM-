@@ -1,0 +1,37 @@
+[
+  {
+    "file": "renders/gpt_raw/R1_bg.png",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "alpha_range": null,
+    "status": "draft; compare with approved brand before final use"
+  },
+  {
+    "file": "renders/gpt_raw/R4_bg.png",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "alpha_range": null,
+    "status": "draft; compare with approved brand before final use"
+  },
+  {
+    "file": "renders/gpt_raw/END_bg.png",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "alpha_range": null,
+    "status": "draft; compare with approved brand before final use"
+  },
+  {
+    "file": "renders/gpt_raw/R2_skin_forearm.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "status": "draft; compare with approved brand before final use"
+  }
+]
