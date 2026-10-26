@@ -1,5 +1,5 @@
 {
-  "_status": "Этап 3: блок «box» на узбекской латинице (апостроф ʻ U+02BB). НА ВЫЧИТКУ НОСИТЕЛЮ. Остальные блоки — этап 4.",
+  "_status": "Этап 4: полный набор на узбекской латинице (апостроф ʻ U+02BB). НА ВЫЧИТКУ НОСИТЕЛЮ. [TEKSHIRISH] — с инструкцией Yafho, [TOʻLDIRISH] — данные, [YURIST] — на согласование.",
   "box": {
     "descriptor": "Chandiqlarni parvarishlash uchun silikon lenta",
     "size_plate": "{width} sm × {length} m",
@@ -51,5 +51,329 @@
     "legal_storage_short": "+5…+30 °C da quruq joyda saqlang",
     "legal_ifu": "Qoʻllashdan oldin yoʻriqnoma bilan tanishing",
     "warning_short": "Faqat bitgan teriga"
+  },
+  "brand": {
+    "descriptor": "Chandiqlarni parvarishlash uchun silikon lenta",
+    "trust_line": "Tibbiy distribyutordan",
+    "trust_line_doctor": "[YURIST: «Shifokorlar tavsiyasi» — faqat ismi va roziligi bor haqiqiy shifokor boʻlsa]"
+  },
+  "slides": [
+    {
+      "n": 1,
+      "title": "Chandiqlarni parvarishlash uchun silikon lenta",
+      "sub": "Tibbiy silikon · koʻp martalik · oʻlchamga qirqiladi"
+    },
+    {
+      "n": 2,
+      "title": "Chandiq yumshoqroq, tekisroq va kamroq koʻrinadi",
+      "sub": "Chandiqni yumshoqroq, tekisroq va kamroq koʻrinadigan qilishga yordam beradi. Natija individual.",
+      "bullets": [
+        "Yumshoqroq",
+        "Tekisroq",
+        "Kamroq koʻrinadi"
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Namlikni saqlaydi va chandiqni himoya qiladi",
+      "sub": "Silikon toʻsiq hosil qiladi: lenta ostidagi teri namlangan, chandiq ishqalanish va tortilishdan himoyalangan — chandiq toʻqimasi tinchroq yetiladi.",
+      "footnote": "Silikon qoplamalar — chandiqlarni davolash boʻyicha xalqaro tavsiyalarda birinchi qator*",
+      "footnote_source": "*Mustoe T.A. et al. International clinical recommendations on scar management"
+    },
+    {
+      "n": 4,
+      "title": "Qaysi chandiqlar uchun",
+      "tiles": [
+        "Operatsiyadan keyin",
+        "Kesarcha kesishdan keyin",
+        "Kuyishdan keyin",
+        "Jarohatdan keyin",
+        "Gipertrofik",
+        "Keloid"
+      ],
+      "footnote": "Faqat toʻliq bitgandan va choklar olingandan keyin"
+    },
+    {
+      "n": 5,
+      "title": "4 ta oddiy qadam",
+      "steps": [
+        "Terini tozalang va quriting",
+        "1 sm zaxira bilan qirqing, burchaklarini yumaloqlang",
+        "Tortmasdan yopishtiring",
+        "Kuniga 12 soatdan koʻproq taqing"
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Natija 12 hafta davomida toʻplanadi",
+      "timeline": [
+        {
+          "t": "~2 hafta",
+          "text": "operatsiyadan keyin: yara bitdi, choklar olindi — boshlash"
+        },
+        {
+          "t": "4 hafta",
+          "text": "teri koʻnikdi, kuniga 12+ soat"
+        },
+        {
+          "t": "8 hafta",
+          "text": "chandiq yumshoqroq va oqishroq"
+        },
+        {
+          "t": "12+ hafta",
+          "text": "natija toʻplanadi"
+        }
+      ],
+      "footnote": "Shifokor bilan kelishib boshlang. Muddatlar taxminiy, natija individual."
+    },
+    {
+      "n": 7,
+      "title": "Oʻlchamingizni tanlang",
+      "sizes": [
+        {
+          "sku": "SC-4150",
+          "label": "4 sm × 1,5 m",
+          "use": "boshlangʻich, bitta kichik chandiq"
+        },
+        {
+          "sku": "SC-4300",
+          "label": "4 sm × 3 m",
+          "use": "12 haftalik kurs"
+        },
+        {
+          "sku": "SC-5150",
+          "label": "5 sm × 1,5 m",
+          "use": "keng chandiq, kuyish"
+        },
+        {
+          "sku": "SC-5300",
+          "label": "5 sm × 3 m",
+          "use": "kesarcha kesish, uzun chandiqlar"
+        }
+      ],
+      "rule": "Lenta chandiqni har tomondan 1 sm ga qoplashi kerak"
+    },
+    {
+      "n": 8,
+      "title": "Tibbiy silikon. Tibbiy distribyutordan",
+      "sub": "Tarkibi: tibbiy silikon [TEKSHIRISH]. Lateks yoʻq [TOʻLDIRISH]. QR orqali video-yoʻriqnoma.",
+      "footnote": "Qoʻllashdan oldin mutaxassis bilan maslahatlashing"
+    }
+  ],
+  "marketplace": {
+    "title_template": "Chandiq va izlar uchun silikon plastir Silicare, lenta {width} sm × {length} m, koʻp martalik, operatsiya va kesarevdan keyin",
+    "description": [
+      {
+        "h": "Bu nima",
+        "p": "Silicare — bitgan chandiqlarni parvarishlash uchun tibbiy silikon lenta. Operatsiya, kesarcha kesish, kuyish va jarohatdan keyin, yara toʻliq bitib, choklar olingach, kattalar uchun moʻljallangan."
+      },
+      {
+        "h": "Qaysi chandiqlar uchun",
+        "p": "Gipertrofik va keloid chandiqlar, operatsiya va jarohatdan keyingi chandiqlar, kesarcha kesish va kuyishdan keyingi chandiqlar. Lenta chandiq yetilayotgan, unga hali taʼsir qilish mumkin boʻlgan bosqichda ishlaydi; eski chandiqlarga — sekinroq yordam beradi."
+      },
+      {
+        "h": "Silikon qanday ishlaydi",
+        "p": "Yangi chandiq namlikni yoʻqotadi, teri esa kollagenni ortiqcha ishlab chiqarib javob beradi — shunday qilib chandiq zich va boʻrtiq boʻladi. Silikon lenta yumshoq toʻsiq hosil qiladi: namlikni saqlaydi, ishqalanish va chandiq chetlarining tortilishini kamaytiradi. Chandiq toʻqimasi tinchroq yetiladi, chandiq yumshoqroq, tekisroq va kamroq koʻrinadigan boʻladi. Silikon qoplamalar — chandiqlarni davolash boʻyicha xalqaro tavsiyalarda birinchi qator. Natija individual."
+      },
+      {
+        "h": "Qachon boshlash",
+        "p": "Toʻliq bitgandan va choklar olingandan keyin — odatda operatsiyadan 2 hafta oʻtgach. Lentani ochiq yara, qobiq va yalligʻlangan teriga surtmang. Parvarishni boshlashni davolovchi shifokor bilan kelishing."
+      },
+      {
+        "h": "Qanday qoʻllash va parvarish qilish",
+        "p": "Terini krem va moysiz tozalab, quriting. Chandiqning har tomonidan 1 sm zaxira bilan boʻlak qirqing, burchaklarini yumaloqlang. Tortmasdan yopishtiring. Kuniga 12 soatdan koʻproq taqing, dastlabki kunlarda vaqtni asta-sekin oshiring. Dushdan oldin yeching, sovunsiz iliq suvda yuving va havoda quriting. Bitta boʻlakni qayta ishlatish muddati — [YAFHO YOʻRIQNOMASI BILAN TEKSHIRISH]. Kurs — 12 haftadan."
+      },
+      {
+        "h": "Oʻlchamlar va qanday tanlash",
+        "p": "4 sm × 1,5 m — bitta kichik chandiq, boshlangʻich variant. 4 sm × 3 m — toʻliq 12 haftalik kurs. 5 sm × 1,5 m — keng chandiq, kuyish. 5 sm × 3 m — kesarcha kesish va uzun operatsiyadan keyingi chandiqlar. Qoida oddiy: lenta chandiqni har tomondan 1 sm ga qoplashi kerak."
+      },
+      {
+        "h": "Qarshi koʻrsatmalar va muhim",
+        "p": "Ochiq yara, chok, qobiq, yalligʻlangan yoki infeksiyalangan teriga qoʻllamang. Taʼsirlanish yoki toshma boʻlsa, lentani yechib, shifokorga murojaat qiling. Bolalar, homiladorlik va keloid chandiqlarda — shifokor bilan kelishib. Tibbiy buyum, nosteril. Qoʻllashdan oldin mutaxassis bilan maslahatlashing. [YURIST: tibbiy buyum reklamasi uchun disklaymer matni]"
+      }
+    ],
+    "specs": {
+      "Brend": "Silicare",
+      "Ishlab chiqaruvchi": "HONY MEDICAL CO., LTD",
+      "Mamlakat": "Xitoy",
+      "Material": "tibbiy silikon [TEKSHIRISH]",
+      "Kengligi": "{width} sm",
+      "Uzunligi": "{length} m",
+      "Qalinligi": "[OʻLCHASH] mm",
+      "Qadoqdagi soni": "1 rulon",
+      "Qadoq oʻlchami": "{box_w}×{box_d}×{box_h} mm",
+      "Qadoq vazni": "[OʻLCHASH] g",
+      "Roʻyxatga olish guvohnomasi": "[TOʻLDIRISH]",
+      "Yaroqlilik muddati": "[TOʻLDIRISH]",
+      "Vazifasi": "bitgan chandiqlarni parvarishlash",
+      "Koʻp martalik": "ha"
+    },
+    "seo_keywords": [
+      "chandiq uchun silikon plastir",
+      "izlar uchun silikon lenta",
+      "kesarevdan keyin chandiq plastiri",
+      "operatsiyadan keyin silikon plastir",
+      "keloid chandiq lentasi"
+    ]
+  },
+  "video": {
+    "end_card": {
+      "cta": "Uzumda qidiring",
+      "handle": "@sil.icare",
+      "disclaimer": "Qoʻllashdan oldin mutaxassis bilan maslahatlashing [YURIST]"
+    },
+    "R1": {
+      "title": "Tanishuv",
+      "length_sec": 15,
+      "shots": [
+        {
+          "t": "0–2",
+          "text": ""
+        },
+        {
+          "t": "2–5",
+          "text": ""
+        },
+        {
+          "t": "5–9",
+          "text": "Tibbiy silikon"
+        },
+        {
+          "t": "9–13",
+          "icons": [
+            "Koʻp martalik",
+            "Oʻlchamga qirqiladi",
+            "Kiyim ostida sezilmaydi"
+          ]
+        },
+        {
+          "t": "13–15",
+          "end": true
+        }
+      ]
+    },
+    "R2": {
+      "title": "Qanday yopishtirish",
+      "length_sec": 25,
+      "shots": [
+        {
+          "t": "0–2",
+          "text": "Silikon lentani qanday toʻgʻri yopishtirish kerak?"
+        },
+        {
+          "t": "2–7",
+          "text": "1. Terini tozalang va quriting"
+        },
+        {
+          "t": "7–12",
+          "text": "2. +1 sm bilan qirqing, burchaklarni yumaloqlang"
+        },
+        {
+          "t": "12–17",
+          "text": "3. Tortmasdan yopishtiring"
+        },
+        {
+          "t": "17–22",
+          "text": "4. Kuniga 12 soatdan koʻproq taqing"
+        },
+        {
+          "t": "22–25",
+          "end": true
+        }
+      ]
+    },
+    "R3": {
+      "title": "Qanday ishlaydi",
+      "length_sec": 20,
+      "shots": [
+        {
+          "t": "0–2",
+          "text": "Nega shifokorlar silikonni tavsiya qiladi?"
+        },
+        {
+          "t": "2–8",
+          "text": "Chandiq namlikni yoʻqotadi — toʻqima ortiqcha oʻsadi"
+        },
+        {
+          "t": "8–14",
+          "text": "Silikon namlikni saqlaydi — chandiq tinchroq"
+        },
+        {
+          "t": "14–18",
+          "text": "Xalqaro tavsiyalarda birinchi qator*"
+        },
+        {
+          "t": "18–20",
+          "end": true
+        }
+      ],
+      "footnote": "*Mustoe et al."
+    },
+    "R4": {
+      "title": "Qachon boshlash",
+      "length_sec": 20,
+      "shots": [
+        {
+          "t": "0–2",
+          "text": "Operatsiyadan keyin: silikonni qachon mumkin?"
+        },
+        {
+          "t": "2–16",
+          "timeline": [
+            {
+              "t": "0-kun",
+              "text": "operatsiya"
+            },
+            {
+              "t": "~2 hafta",
+              "text": "yara bitdi, choklar olindi"
+            },
+            {
+              "t": "Boshlash",
+              "text": "silikon — shifokor bilan kelishib"
+            },
+            {
+              "t": "4 · 8 · 12+ hafta",
+              "text": "natija toʻplanadi"
+            }
+          ]
+        },
+        {
+          "t": "16–18",
+          "text": "Faqat bitgan teriga. Shifokor bilan kelishing"
+        },
+        {
+          "t": "18–20",
+          "end": true
+        }
+      ]
+    },
+    "R5": {
+      "title": "Oʻlchamni tanlang",
+      "length_sec": 15,
+      "shots": [
+        {
+          "t": "0–2",
+          "text": "4 yoki 5 sm? 1,5 yoki 3 m?"
+        },
+        {
+          "t": "2–10",
+          "sizes": [
+            "4 sm × 1,5 m — bitta kichik chandiq",
+            "4 sm × 3 m — 12 haftalik kurs",
+            "5 sm × 1,5 m — keng chandiq, kuyish",
+            "5 sm × 3 m — kesarcha kesish, uzun chandiqlar"
+          ]
+        },
+        {
+          "t": "10–13",
+          "text": "Bitta rulon — kursga [HISOBLASH: hafta]"
+        },
+        {
+          "t": "13–15",
+          "end": true
+        }
+      ]
+    }
   }
 }
