@@ -1,0 +1,4 @@
+out/*/
+!out/preview/
+out/html/
+out/assets/

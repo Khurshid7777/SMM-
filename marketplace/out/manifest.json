@@ -1,0 +1,514 @@
+[
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_01_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_02_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_03_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_04_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_05_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_06_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_07_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4150",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4150/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4150/slide_08_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_01_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_02_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_03_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_04_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_05_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_06_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_07_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-4300",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-4300/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-4300/slide_08_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_01_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_02_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_03_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_04_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_05_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_06_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_07_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5150",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5150/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5150/slide_08_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_01_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_02_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_03_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_04_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_05_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_06_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_07_900x1200.png"
+ },
+ {
+  "lang": "ru",
+  "sku": "SC-5300",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/ru/SC-5300/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/ru/SC-5300/slide_08_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_01_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_02_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_03_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_04_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_05_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_06_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_07_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4150",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4150/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4150/slide_08_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_01_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_02_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_03_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_04_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_05_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_06_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_07_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-4300",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-4300/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-4300/slide_08_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_01_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_02_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_03_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_04_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_05_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_06_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_07_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5150",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5150/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5150/slide_08_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 1,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_01.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_01.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_01_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 2,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_02.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_02.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_02_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 3,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_03.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_03.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_03_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 4,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_04.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_04.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_04_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 5,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_05.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_05.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_05_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 6,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_06.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_06.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_06_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 7,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_07.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_07.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_07_900x1200.png"
+ },
+ {
+  "lang": "uz-latn",
+  "sku": "SC-5300",
+  "n": 8,
+  "html": "/home/user/SMM-/marketplace/out/html/uz-latn/SC-5300/slide_08.html",
+  "png": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_08.png",
+  "wb": "/home/user/SMM-/marketplace/out/uz-latn/SC-5300/slide_08_900x1200.png"
+ }
+]
